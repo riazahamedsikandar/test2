@@ -1,11 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
     border: 0;
     outline: 0;
     font-size: 100%;
@@ -45,9 +40,6 @@ body {
     color: white;
     text-decoration: none;
 }
-
-
-/* Second Navbar (Main Navbar) */
 
 .main-navbar {
     background-color: white;
@@ -107,9 +99,6 @@ body {
     border-radius: 10px;
 }
 
-
-/* Page Content */
-
 .content {
     padding: 50px 0;
     text-align: center;
@@ -148,41 +137,43 @@ body {
 .container2 {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     background-color: #7e952e;
     padding: 20px;
     font-family: Helvetica;
+    align-items: center;
 }
 
 .box {
-    width: 30%;
+    flex: 1;
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
 .box img {
     max-width: 100px;
-    /* Adjust image size as needed */
-    margin-bottom: 10px;
     margin-right: 20px;
-}
-
-.t1 img {
-    height: 40%;
-    width: 40%;
 }
 
 .box h2 {
     margin: 0;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .box p {
-    margin: 10px 0 0 0;
     font-size: 16px;
     line-height: 1.5;
+    margin: 0;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
 }
 
 .container3 h2 {
@@ -362,11 +353,71 @@ body {
     margin-right: 5rem;
 }
 
-.parallax {
-    background-image: url("./about-video-bg.jpg");
-    min-height: 500px;
+.container3 {
+    width: 100%;
+}
+
+
+}
+.container3 h2 {
+    margin-right: 5rem;
+}
+.parallax-container {
+    background-image: url('about-video-bg.jpg');
+    min-height: 350px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-content {
+    text-align: left;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.parallax-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    align-items: left;
+    margin-right: 30rem;
+    margin-top: 10rem;
+}
+.parallax-text span {
+    color: #a1cc46;
+}
+.parallax-video iframe {
+    width: 40%;
+    height: 315px;
+    border-radius: 10px;
+    margin-left: 45rem;
+    margin-top: -12rem;
+}
+.container3 h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+.t {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    width: 80%;
+    align-items: center;
+    margin-left: 6rem;
+}
+.t1 {
+    margin: 2rem;
+    text-align: center;
+}
+.t1 h2 {
+    font-size: 2rem;
+}
+.t1 p {
+    font-size: 1rem;
+}
+.t1 img {
+    height: 100px;
 }
