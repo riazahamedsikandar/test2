@@ -42,12 +42,101 @@ body {
 }
 
 .main-navbar {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    /* White background as in the image */
     padding: 15px 0;
-    width: 100%;
-    position: fixed;
+    /* Slightly increased padding for better alignment */
+    font-family: 'Arial', sans-serif;
+    /* Updated font family to match the design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Added subtle shadow */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6c757d;
+    /* Text color similar to the image */
+    font-size: 16px;
+    /* Match the font size */
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    /* Text color on hover */
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    /* Position below the parent link */
+    left: 0;
+    background-color: #ffffff;
+    /* White background for dropdown */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Dropdown shadow */
+    padding: 10px 0;
+    display: none;
     z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin-bottom: 0;
+    /* No margin between dropdown items */
+}
+
+.dropdown-menu li a {
+    color: #000000;
+    padding: 10px 20px;
+    /* Padding inside the dropdown */
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #7b8d05;
+    /* Light grey background on hover */
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    /* Show dropdown on hover */
+}
+
+.caret {
+    margin-left: 5px;
+    border-top: 4px solid #6c757d;
+    /* Match the caret style */
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .box img {
